@@ -12,15 +12,29 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
     @IBOutlet weak var bgImg: UIImageView!
     @IBOutlet weak var bodyTableView: UITableView!
+    var  titleArray : NSArray!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.initData()
         self.configView()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //测试字符串输出
+    func testString(){
+        let str1=titleArray.componentsJoined(by: ",")
+        print(str1)
+    }
+    
+    //初始化数据
+    func initData(){
+        titleArray=["玩游戏","看电视","听音乐","学英语","读小说","瞎玩"]
     }
     
     
@@ -33,6 +47,8 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         bodyTableView.delegate=self
         bodyTableView.dataSource=self
         bodyTableView.backgroundColor=UIColor.clear
+        let nib = UINib(nibName:"TableViewCell",bundle:nil)
+        bodyTableView.register(nib, forCellReuseIdentifier: "cells")
         
     }
     
@@ -45,15 +61,9 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView .dequeueReusableCell(withIdentifier: "cell")
-        if(cell == nil){
-            cell=UITableViewCell()
-        }
-        cell?.textLabel?.text="hehe\(indexPath.row)"
-        cell?.backgroundColor=UIColor.clear
-//        cell?.selectionStyle=UITableViewCellSelectionStyleNone
-        
-        return cell!
+        let cell = tableView .dequeueReusableCell(withIdentifier: "cells") as! TableViewCell
+        cell.title.text=titleArray.object(at: indexPath.row) as? String
+        return cell
 
     }
     
