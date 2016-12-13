@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		783F39631DEFF1950087B513 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F39611DEFF1950087B513 /* TableViewCell.swift */; };
 		783F39641DEFF1950087B513 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 783F39621DEFF1950087B513 /* TableViewCell.xib */; };
+		78B730771DFFA56200FE7F13 /* UseStuckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B730761DFFA56200FE7F13 /* UseStuckViewController.swift */; };
 		78C549C51DED854B00D76F9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C549C41DED854B00D76F9A /* AppDelegate.swift */; };
 		78C549C71DED854B00D76F9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C549C61DED854B00D76F9A /* ViewController.swift */; };
 		78C549CC1DED854B00D76F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C549CB1DED854B00D76F9A /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		783F39611DEFF1950087B513 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		783F39621DEFF1950087B513 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		78B730761DFFA56200FE7F13 /* UseStuckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseStuckViewController.swift; sourceTree = "<group>"; };
 		78C549C11DED854B00D76F9A /* SwiftDelelop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDelelop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C549C41DED854B00D76F9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78C549C61DED854B00D76F9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				783F39611DEFF1950087B513 /* TableViewCell.swift */,
 				783F39621DEFF1950087B513 /* TableViewCell.xib */,
 				78C549DC1DED873700D76F9A /* MainViewController.swift */,
+				78B730761DFFA56200FE7F13 /* UseStuckViewController.swift */,
 			);
 			path = LoginAndMain;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				78C549C71DED854B00D76F9A /* ViewController.swift in Sources */,
 				78C549C51DED854B00D76F9A /* AppDelegate.swift in Sources */,
 				78C549DF1DED873700D76F9A /* MainViewController.swift in Sources */,
+				78B730771DFFA56200FE7F13 /* UseStuckViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -299,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -313,6 +317,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N86P8VJBU3;
 				INFOPLIST_FILE = SwiftDelelop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SaiDicaprio.SwiftDelelop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -326,6 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N86P8VJBU3;
 				INFOPLIST_FILE = SwiftDelelop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SaiDicaprio.SwiftDelelop;
 				PRODUCT_NAME = "$(TARGET_NAME)";

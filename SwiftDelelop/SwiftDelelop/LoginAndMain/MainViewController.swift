@@ -67,6 +67,12 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print(indexPath.row)
+    }
+    
+    
 
     /*
     // MARK: - Navigation
