@@ -16,6 +16,11 @@ class ViewController: UIViewController {
         
         print("test001")
         
+        
+        let a : Int = 5
+        let b : Int = 6
+        print("result:\(a+b)")
+        
     }
 
     override func didReceiveMemoryWarning() {
